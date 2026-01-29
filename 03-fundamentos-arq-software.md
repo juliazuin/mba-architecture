@@ -71,7 +71,7 @@ Maior flexibilidade, ou seja, menor complexidade para integração com outros si
 
 ## Dimensões e fitness functions
 
-Arquitetura multidimensional:
+Arquitetura ```dimensional:
 
 * Técnica: Tecnologia, frameworks, acoplamento, testes, performance.
 
@@ -81,3 +81,19 @@ Arquitetura multidimensional:
 
 * Operacional: Como vai operar, observabilidade, pipelines, testes, rollback...
 
+
+### Fitness functions
+Fitness functions são uma forma de **medir** a efetividade, performance e fatores relevantes de acordo com a arquitetura de software.
+Ela é uma parte do acompanhamento do software conforme ele evolui.
+Para realizar essa medição de efetividades é importante identificar os aspectos críticos e deixá-los de uma forma mensurável e com objetivos claros.
+
+Alguns critérios comuns de fitness functions:
+- Performance
+- Modularizacao
+- Manutenibilidade
+- Escalabilidade
+- Segurança
+
+![fitness-functions](./img/03/fitness-functions.png)
+
+![fitness-functions-completo](./img/03/fitness-functions-completo.png)
