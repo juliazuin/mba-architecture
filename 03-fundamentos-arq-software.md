@@ -97,3 +97,27 @@ Alguns critérios comuns de fitness functions:
 ![fitness-functions](./img/03/fitness-functions.png)
 
 ![fitness-functions-completo](./img/03/fitness-functions-completo.png)
+
+### Acoplamento
+**ToDo: ver o video da aula**
+Livro: Release It! - Michael T. Nygard
+
+Tipos de acoplamento:
+
+Operacional: depende de algo que esta com problema e por isso o sistema nao funciona
+
+Desenvolvimento: mudanças obrigatoriamente coordenadas entre dois módulos
+
+Semântico: Dependência de terminologias entre sistemas (deixar o linguajar equivalente entre varios contextos diferentes)
+
+Funcional: ter um módulo core que é utilizado por vários outros sistemas e esses dependem disso, entao uma mudança nesse módulo pode encadear outros problemas.
+
+Acidental: Mudanças que acontecem "sem motivo" como alterar o contrato de uma API.
+
+Acoplamento eferente ou aferente (fan-out ou fan-in)
+
+eferente = se alguem depende de mim (mais estável), normalmente são mais propensos a falhas devido à dependência do bom funcionamento de outros componentes.
+
+aferente = eu dependo de alguem (menos estável), normalmente são mais críticos pois afetam diretamente outros componetes.
+
+![alt text](./img/03/acoplamento.png)
