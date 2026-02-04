@@ -121,3 +121,18 @@ eferente = se alguem depende de mim (mais estável), normalmente são mais prope
 aferente = eu dependo de alguem (menos estável), normalmente são mais críticos pois afetam diretamente outros componetes.
 
 ![alt text](./img/03/acoplamento.png)
+
+#### Metrificando instabilidade:
+
+> fan-out = eferente
+>
+> fan-in = aferente
+
+Instabilidade = Fan-out / (Fan-in + Fan-out)
+
+range: 0 (totalmente estável) a 1 (totalmente instável)
+
+exemplo:
+![acoplamento-metrificado](./img/03/acoplamento-metrificado.png)
+
+Nesse exemplo o componente Cc é o mais crítico, pois existem mais componentes que dependem dele. A aferencia (fan-in) = 3 e a eferencia (fan-out) = 1. Logo, a instabilidade = 1/(3+1) = 0,25 (mais estável).
